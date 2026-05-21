@@ -1,0 +1,28 @@
+# Terraform
+**/terraform.tfvars
+**/.terraform/
+**/*.tfstate
+**/*.tfstate.*
+**/.terraform.lock.hcl
+*.tfplan
+crash.log
+crash.*.log
+
+# Kubeconfig (often contains secrets)
+kubeconfig
+*.kubeconfig
+
+# Env / local
+.env
+.env.*
+!.env.example
+
+# Ansible
+ansible.log
+ansible/inventory/*/group_vars/all/vault
+
+# Vault unseal keys (SENSITIVE)
+.vault-keys.json
+.claude/
+CLAUDE.md
+.claude/settings.local.json
